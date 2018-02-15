@@ -1,13 +1,13 @@
 
 /*手持ち割引券を何枚使えるか？*/
-function use_tickets_count(total,tickets){
+function use_tickets_count(total, tickets){
   let sum = total;
-  let thousand_tickets = 0;
-  let fiveHundred_tickets = 0;
-  let hundred_tickets = 0;
-  const THOUSAND = 1000;
+  let thousand_tickets     = 0;
+  let five_hundred_tickets = 0;
+  let hundred_tickets      = 0;
+  const THOUSAND    = 1000;
   const FIVEHUNDRED = 500;
-  const HUNDRED = 100;
+  const HUNDRED     = 100;
   for(let x=0; x<tickets[0]; x++){
     if(sum < THOUSAND){
       break;
@@ -22,7 +22,7 @@ function use_tickets_count(total,tickets){
       break;
     }else{
       sum -= FIVEHUNDRED;
-      fiveHundred_tickets += 1;
+      five_hundred_tickets += 1;
     }
   }
 
@@ -34,16 +34,16 @@ function use_tickets_count(total,tickets){
       hundred_tickets += 1;
     }
   }
-  return `使用できる割引券は、1000円割引${thousand_tickets}枚、500円割引${fiveHundred_tickets}枚、100円割引${hundred_tickets}枚です。`;
+  return `使用できる割引券は、1000円割引${thousand_tickets}枚、500円割引${five_hundred_tickets}枚、100円割引${hundred_tickets}枚です。`;
 }
 
 
 /*支払金額*/
-function payment(total,tickets){
+function payment(total, tickets){
   let sum = total;
-  const THOUSAND = 1000;
+  const THOUSAND    = 1000;
   const FIVEHUNDRED = 500;
-  const HUNDRED = 100;
+  const HUNDRED     = 100;
   for(let x=0; x<tickets[0]; x++){
     if(sum < THOUSAND){
       break;
@@ -71,17 +71,17 @@ function payment(total,tickets){
 }
 
 
-function message(total,tickets){
+function message(total, tickets){
   if(total >= 5000){
-    console.log(use_tickets_count(total,tickets));
-    console.log(payment(total,tickets));
+    console.log(use_tickets_count(total, tickets));
+    console.log(payment(total, tickets));
   }else{
     console.log('使用できる割引券はありません。');
     console.log(`支払金額は${total}です。`);
   }
 }
 
-message(6700,[ 2, 3, 3]);
+message(6700, [ 2, 3, 3]);
 
 
 
