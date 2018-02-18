@@ -8,7 +8,7 @@ function use_tickets_count(total, tickets){
   const THOUSAND    = 1000;
   const FIVEHUNDRED = 500;
   const HUNDRED     = 100;
-  for(let x=0; x<tickets[0]; x++){
+  for(let x = 0; x < tickets[0]; x++){
     if(sum < THOUSAND){
       break;
     }else{
@@ -17,7 +17,7 @@ function use_tickets_count(total, tickets){
     }
   }
 
-  for(let y=0; y<tickets[1]; y++){
+  for(let y = 0; y < tickets[1]; y++){
     if(sum < FIVEHUNDRED){
       break;
     }else{
@@ -26,7 +26,7 @@ function use_tickets_count(total, tickets){
     }
   }
 
-  for(let z=0; z<tickets[2]; z++){
+  for(let z = 0; z < tickets[2]; z++){
     if(sum < HUNDRED){
       break;
     }else{
@@ -44,7 +44,7 @@ function payment(total, tickets){
   const THOUSAND    = 1000;
   const FIVEHUNDRED = 500;
   const HUNDRED     = 100;
-  for(let x=0; x<tickets[0]; x++){
+  for(let x = 0; x < tickets[0]; x++){
     if(sum < THOUSAND){
       break;
     }else{
@@ -52,7 +52,7 @@ function payment(total, tickets){
     }
   }
 
-  for(let y=0; y<tickets[1]; y++){
+  for(let y = 0; y < tickets[1]; y++){
     if(sum < FIVEHUNDRED){
       break;
     }else{
@@ -60,7 +60,7 @@ function payment(total, tickets){
     }
   }
 
-  for(let z=0; z<tickets[2]; z++){
+  for(let z = 0; z < tickets[2]; z++){
     if(sum < HUNDRED){
       break;
     }else{
