@@ -5,9 +5,9 @@ function use_tickets_count(total, tickets){
   let thousand_tickets     = 0;
   let five_hundred_tickets = 0;
   let hundred_tickets      = 0;
-  const THOUSAND    = 1000;
+  const THOUSAND     = 1000;
   const FIVE_HUNDRED = 500;
-  const HUNDRED     = 100;
+  const HUNDRED      = 100;
   for(let x = 0; x < tickets[0]; x++){
     if(sum < THOUSAND){
       break;
@@ -41,9 +41,9 @@ function use_tickets_count(total, tickets){
 //支払金額合計算出
 function payment(total, tickets){
   let sum = total;
-  const THOUSAND    = 1000;
+  const THOUSAND     = 1000;
   const FIVE_HUNDRED = 500;
-  const HUNDRED     = 100;
+  const HUNDRED      = 100;
   for(let x = 0; x < tickets[0]; x++){
     if(sum < THOUSAND){
       break;
